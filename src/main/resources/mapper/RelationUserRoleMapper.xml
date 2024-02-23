@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssyt.tqserver.mapper.RelationUserRoleMapper">
+
+    <select id="selectByUserId" resultType="com.ssyt.tqserver.entity.RelationUserRole">
+        select * from relation_user_role where user_id = #{userId}
+    </select>
+</mapper>
